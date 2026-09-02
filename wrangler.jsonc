@@ -3,27 +3,29 @@
   "name": "tangkas-v1",
   "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
+
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
     "not_found_handling": "single-page-application",
-    "run_worker_first": ["/api/*", "/media/*"]
-  }
+    "run_worker_first": [
+      "/api/*",
+      "/media/*"
+    ]
+  },
 
-  /*
-  AKTIFKAN SETELAH MEMBUAT D1 + R2 DI CLOUDFLARE:
-  ,"d1_databases": [
+  "d1_databases": [
     {
       "binding": "DB",
       "database_name": "tangkas-db",
-      "database_id": "PASTE-D1-DATABASE-ID-DISINI"
+      "database_id": "4a7a2617-be67-456d-a196-adfdda463323"
     }
   ],
+
   "r2_buckets": [
     {
       "binding": "PHOTOS",
       "bucket_name": "tangkas-private-photos"
     }
   ]
-  */
 }
