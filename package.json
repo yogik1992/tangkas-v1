@@ -1,0 +1,19 @@
+{
+  "name": "tangkas-v1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.1.5",
+    "hono": "^4.9.7"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3",
+    "wrangler": "^4.33.1"
+  }
+}

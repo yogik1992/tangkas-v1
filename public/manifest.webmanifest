@@ -1,0 +1,9 @@
+{
+  "name": "TANGKAS — Tata Kelola Aktivitas Kerja Selaras",
+  "short_name": "TANGKAS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f7f5",
+  "theme_color": "#0d6b54",
+  "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

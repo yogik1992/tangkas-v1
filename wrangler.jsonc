@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tangkas-v1",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*", "/media/*"]
+  }
+
+  /*
+  AKTIFKAN SETELAH MEMBUAT D1 + R2 DI CLOUDFLARE:
+  ,"d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tangkas-db",
+      "database_id": "PASTE-D1-DATABASE-ID-DISINI"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "tangkas-private-photos"
+    }
+  ]
+  */
+}
